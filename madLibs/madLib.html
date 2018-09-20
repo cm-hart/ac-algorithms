@@ -16,7 +16,33 @@
 			 </ul>
 			 <button id="lib-button">Lib it!</button>
 			  
-			 <div id="story"></div>  
+			 <div id="story"></div> 
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			 <script src="madLib.js"></script>
+			<script>
+			//input: elements from the form, strings the user supplies
+			//output: the sentence, a string displayed to the user
+			//we essentially need two different parts:
+				//the event listener and the function itself
+
+				//create a function called makeMadLib
+					//Get the values from the form 
+					//Append those values concatenated in a sentence to the DOM
+				//create an event listener that listens for a click of the button with an id of lib-button
+					//When clicked, the event function should call the makeMadLib function
+				// function makeMadLib(){
+				// 	var noun = $("#noun").val();
+				// 	var adjective = $("#adjective").val();
+				// 	var person = $("#person").val();
+				// 	var sentence = person + " really likes " + adjective + " " + noun + ".";
+				// 	$("#story").append("<p>" + sentence + "</p>");
+				// }
+				// //event listener:
+				// $("#lib-button").on("click", function(){
+				// 	makeMadLib()
+				// });
+
+			// //</script>
 		</body>
 	</html>
 	
