@@ -37,9 +37,35 @@ console.log(result) // -1
 
 **/
 
+//inputs are two numbers a, b; these are the parameters
+//outputs are true, false, 0 or -1;
+//purposr: evaluate a and b to see if theu are numbers, and how they compare to one another (ie, if one is bigger)
 
+
+
+var result = parseInt(prompt(""))
 
 function isBigger(a, b) {
-	//Your code here
+	//conditional statement to test if a > b
+	//test if a < b
+	//if a === b
+	//if a or be are not numbers
+	var result = '';
+	if (typeof a === "number" && typeof b === "number") {
+		if ( a > b ) {
+			result = true;
+		} else if ( a < b ){
+			result = false;
+		} else {
+			result = 0;
+		}
+	} else {
+		result = -1
+	}
 	
+	return result;
 }
+	
+
+isBigger(3, 4);
+
