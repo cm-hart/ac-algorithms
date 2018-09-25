@@ -33,7 +33,24 @@ console.log(result) // "ghimmnorstyy"
 
 **/
 
+//inputs: string  - input parameter
+//outputs: string with letters in alphabetical order
+//purpose: to sort individual characters alphabetically
+
+
 function alphabetSoup(str) {
-	//Your code here
-	
+	//turn the string into an array of characters, using split, then store the resulting array in a variable, *** the split method takes in delimiter ---""
+	//Sort the array 
+	//Join the elements in the array back into a string, the argument for the .join() method will be ""
+	//Get rid of the spaces in the string using trim
+	function alphabetSoup(str) { 
+		var arraySplit = str.split("");
+		var arraySort = arraySplit.sort();
+		var arrayJoin = arraySort.join("");
+			var arrayTrim = arrayJoin.trim();
+		return arrayTrim;
+	}
 }
+	console.log(alphabetSoup("jd fhbl or ogh"));
+	
+	
