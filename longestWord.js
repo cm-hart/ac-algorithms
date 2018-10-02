@@ -20,15 +20,18 @@
 
 //input: string of words
 //output: a number, letting us know the number of characters in the longest word in the string
-//purpose: to be able to count characters of single words within a multi-word string
+//purpose: to be able to count characters of single words within a multi-word string, and to find the longest word
+//For loop to loop through an array of words
+  //Conditional statment to test to see the new word we are testing is longer then the word stored in our variable, if it is replace it with the new word
+//return the varibale storing the longest word
 
 
 function findLongestWord(str) {
-  var strSplit = str.split(' ');
+  var wordArray = str.split(' ');
   var longestWord = 0;
-  for(var i = 0; i < strSplit.length; i++){
-    if(strSplit[i].length > longestWord){
-	longestWord = strSplit[i].length;
+  for(var i = 0; i < wordArray.length; i++){
+    if(wordArray[i].length > longestWord){
+	longestWord = wordArray[i].length;
      }
   }
   return longestWord;
