@@ -30,7 +30,23 @@ var result = isPrime(51)
 console.log(result) // false
 
 **/
-
+// input:
+//output: 
+//purpose: for loop that starts at 1 & goes up to the input number 
+	//conditional statement to check if the number is a 1 or a 2;
+	//conditional statement: checks if the input number us divisible by i with 0 as it's remainder, if true, we want it to return false
+	//In else statement, return true
 function isPrime(num) {
-	// Your code
+	if (num === 1) {
+		return false; 
+	}
+	if (num ===2){
+		return true;
+	}
+	for (var i = 2; i< num; i++){
+		if (num % i === 0){
+			return false;
+		}
+	}
+	return true;
 }
